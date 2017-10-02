@@ -80,6 +80,13 @@
 					</plugins>
 				</pluginManagement>
 			</build>
+			<distributionManagement>
+				<repository>
+					<id>huru-nexus</id>
+					<name>releases</name>
+					<url>http://nexus.huru.ca/content/repositories/releases/</url>
+				</repository>
+			</distributionManagement>
 		</profile>
 	</profiles>
 
