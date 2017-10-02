@@ -55,6 +55,11 @@
         </dependencies>
     </dependencyManagement>
     
+    <scm>
+    	<developerConnection>scm:git:git://github.com/huru-io/dw-quartz</developerConnection>
+    	<url>https://github.com/huru-io/dw-quartz</url>
+    </scm>
+    
     <profiles>
     	<profile>
     		<id>release</id>
