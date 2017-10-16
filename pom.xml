@@ -56,8 +56,25 @@
 	<scm>
 		<developerConnection>scm:git:git://github.com/huru-io/dw-quartz</developerConnection>
 		<url>https://github.com/huru-io/dw-quartz</url>
-<tag>HEAD</tag>
+		<tag>HEAD</tag>
 	</scm>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 
 	<profiles>
 		<profile>
@@ -76,18 +93,6 @@
 									<version>2.1.0</version>
 								</dependency>
 							</dependencies>
-						</plugin>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-source-plugin</artifactId>
-							<executions>
-								<execution>
-									<id>attach-sources</id>
-									<goals>
-										<goal>jar</goal>
-									</goals>
-								</execution>
-							</executions>
 						</plugin>
 					</plugins>
 				</pluginManagement>
